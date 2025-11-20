@@ -135,20 +135,22 @@ const Feed: React.FC<FeedProps> = ({ updates, contacts, userPrefs }) => {
                         </div>
                     ) : (
                         // Text Mode
-                        <div className="absolute inset-0 bg-rose-400 flex flex-col items-center justify-center p-8 text-center relative">
-                            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/noise.png')] opacity-20 mix-blend-overlay"></div>
-                            
-                            <MessageCircle className="w-16 h-16 text-black mb-6 opacity-80" />
+                        <div className="absolute inset-0 bg-rose-400 overflow-y-auto">
+                            <div className="min-h-full flex flex-col items-center justify-center p-8 text-center relative">
+                                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/noise.png')] opacity-20 mix-blend-overlay pointer-events-none"></div>
+                                
+                                <MessageCircle className="w-16 h-16 text-black mb-6 opacity-80 flex-shrink-0 mt-12" />
 
-                            <h2 className="text-3xl md:text-4xl font-black text-black leading-tight mb-8 max-w-xs mx-auto">
-                                "{currentUpdate.content}"
-                            </h2>
+                                <h2 className="text-3xl md:text-4xl font-black text-black leading-tight mb-8 max-w-xs mx-auto">
+                                    "{currentUpdate.content}"
+                                </h2>
 
-                            {currentUpdate.imageUrl && (
-                                <div className="w-32 h-32 rounded-3xl overflow-hidden border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-3">
-                                    <img src={currentUpdate.imageUrl} className="w-full h-full object-cover" />
-                                </div>
-                            )}
+                                {currentUpdate.imageUrl && (
+                                    <div className="w-32 h-32 rounded-3xl overflow-hidden border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-3 flex-shrink-0 mb-12">
+                                        <img src={currentUpdate.imageUrl} className="w-full h-full object-cover" />
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     )}
 

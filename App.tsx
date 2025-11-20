@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="flex min-h-screen bg-cyan-50 items-center justify-center p-0 md:p-6 lg:p-8 font-sans">
-        <main className="w-full md:max-w-[400px] h-[100dvh] md:h-[850px] relative flex flex-col bg-white md:rounded-[2.5rem] shadow-2xl shadow-black/5 border-0 md:border border-white overflow-hidden">
+        <main className="w-full md:max-w-[400px] h-[100dvh] md:h-[90vh] md:max-h-[850px] relative flex flex-col bg-white md:rounded-[2.5rem] shadow-2xl shadow-black/5 border-0 md:border border-white overflow-hidden">
             
             {/* Content Area */}
             <div className="flex-1 overflow-hidden relative bg-white">

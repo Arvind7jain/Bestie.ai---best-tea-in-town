@@ -129,7 +129,7 @@ const AgentChat: React.FC<AgentChatProps> = ({ updates, contacts, userPrefs }) =
       </div>
 
       {/* Messages Stream */}
-      <div className="flex-1 overflow-y-auto px-4 pt-24 pb-4 space-y-6 scrollbar-hide">
+      <div className="flex-1 overflow-y-auto px-4 pt-24 pb-4 space-y-6">
         {messages.map((msg) => {
             const isUser = msg.role === 'user';
             

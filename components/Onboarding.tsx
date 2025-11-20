@@ -55,7 +55,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
             />
         </div>
 
-        <div className="flex-1 overflow-y-auto p-6 md:p-4 pt-12 pb-24 scrollbar-hide">
+        <div className="flex-1 overflow-y-auto p-6 md:p-4 pt-12 pb-24">
             
             {/* Step 1: Intro */}
             {step === 1 && (

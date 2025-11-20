@@ -36,7 +36,7 @@ const Circles: React.FC<CirclesProps> = ({ contacts }) => {
             </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto pt-20 pb-6 px-5 space-y-8 scrollbar-hide">
+        <div className="flex-1 overflow-y-auto pt-20 pb-6 px-5 space-y-8">
             {(Object.entries(groupedContacts) as [string, Contact[]][]).map(([circleName, circleContacts]) => (
                 <div key={circleName} className="animate-fade-up">
                     <div className="flex items-center justify-between mb-4 pl-2">
